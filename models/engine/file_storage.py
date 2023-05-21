@@ -42,8 +42,8 @@ class FileStorage:
         """
             Serialize '__objects' to the JSON file '__file_path'
         """
-        odict = FileStorage.__objects
-        objdict = {obj: odict[obj].to_dict() for obj in odict.keys()}
+        object_dict = FileStorage.__objects
+        objdict = {obj: object_dict[obj].to_dict() for obj in object_dict.keys()}
         with open(FileStorage.__file_path, "w") as f:
             json.dump(objdict, f)
 
