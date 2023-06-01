@@ -1,16 +1,13 @@
 .filters {
-  display: flex;
+  color: white;
   height: 70px;
   width: 100%;
   border: 1px solid #dddddd;
   border-radius: 4px;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  color: white;
-}
-
-.locations {
-  border-right: 1px solid #dddddd;
+  background-color: black;
 }
 
 button {
@@ -20,20 +17,23 @@ button {
   height: 48px;
   width: 20%;
   border-radius: 4px;
-  position: relative;
-  left: 30px;
-  justify-content: flex-end;
+  margin-right: 30px;
 }
 
 button:hover {
-  opacity: 0.9;
+  opacity: 90%;
 }
 
 .locations,
 .amenities {
+  padding-left: 30px;
   height: 100%;
   width: 25%;
   line-height: 50%;
+}
+
+.locations {
+  border-right: 1px solid #dddddd;
 }
 
 .locations h3,
